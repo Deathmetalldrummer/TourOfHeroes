@@ -1,0 +1,11 @@
+div(*ngIf="hero")
+  h4 {{hero.name | uppercase}}
+  div
+      span id:
+      | {{hero.id}}
+  div
+      label
+        | Name
+  input(type="text", placeholder="Name", [(ngModel)]="hero.name")
+
+button((click)='goBack()') Go Back
